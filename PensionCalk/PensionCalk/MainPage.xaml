@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PensionCalk.MainPage">
+
+    <ScrollView>
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="1" Orientation="Horizontal" HorizontalOptions="Center" Margin="0,10,0,0">
+            
+                <StackLayout Padding="20">
+                    <Label Text="Стаж"  FontSize="18" HorizontalOptions="Center" />
+                </StackLayout>
+
+
+                <StackLayout Padding="20">
+                    <Label Text="Лет"  FontSize="14" HorizontalOptions="Center" />
+
+                    <Entry x:Name="PeriodAge" Keyboard="Numeric" />
+                </StackLayout>
+
+                <StackLayout Padding="20">
+                    <Label Text="Месяцев"  FontSize="14" HorizontalOptions="Center" />
+
+                    <Entry x:Name="PeriodM" Keyboard="Numeric" />
+                </StackLayout>
+
+                <StackLayout Padding="20">
+                    <Label Text="Дней"  FontSize="14" HorizontalOptions="Center" />
+
+                    <Entry x:Name="PeriodD" Keyboard="Numeric" />
+                </StackLayout>
+
+                <StackLayout Padding="20">
+                    <Label Text="Зарплата"  FontSize="14" HorizontalOptions="Center" />
+
+                    <Entry x:Name="PeriodS" Keyboard="Numeric" />
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" Orientation="Horizontal" HorizontalOptions="Center" >
+
+                <Label Text="Периоды"  FontSize="18" HorizontalOptions="Center" />
+            </StackLayout>
+            
+            
+            <StackLayout Grid.Row="3" Orientation="Horizontal" HorizontalOptions="Center" Margin="0,10,0,0">
+
+                
+                
+                <StackLayout Padding="20">
+                    <Label Text="Дата приема на работу"  FontSize="14" HorizontalOptions="Center" />
+
+                    <DatePicker x:Name="DatePeriodStart1" Format="d" >
+                        <DatePicker.MinimumDate>1/1/1963</DatePicker.MinimumDate>
+                    </DatePicker>
+                </StackLayout>
+
+                <StackLayout Padding="20">
+                    <Label Text="Дата увольнения с работы"  FontSize="14" HorizontalOptions="Center" />
+
+                    <DatePicker x:Name="DatePeriodEnd1" Format="d" >
+                        <DatePicker.MinimumDate>1/1/1963</DatePicker.MinimumDate>
+                    </DatePicker>
+                </StackLayout>
+
+                <StackLayout Padding="20">
+                    <Label Text="Зарплата"  FontSize="14" HorizontalOptions="Center" />
+
+                    <Entry x:Name="SalaryPeriod1" Keyboard="Numeric" />
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Grid.Row="4" Orientation="Horizontal" HorizontalOptions="Center" Margin="0,10,0,0">
+                <StackLayout Padding="20">
+                    <Label Text="Дата приема на работу"  FontSize="14" HorizontalOptions="Center" />
+
+                    <DatePicker x:Name="DatePeriodStart2" Format="d">
+                        <DatePicker.MinimumDate>1/1/1963</DatePicker.MinimumDate>
+                    </DatePicker>
+                </StackLayout>
+
+                <StackLayout Padding="20">
+                    <Label Text="Дата увольнения с работы"  FontSize="14" HorizontalOptions="Center" />
+
+                    <DatePicker x:Name="DatePeriodEnd2" Format="d" >
+                        <DatePicker.MinimumDate>1/1/1963</DatePicker.MinimumDate>
+                    </DatePicker>
+                </StackLayout>
+
+                <StackLayout Padding="20">
+                    <Label Text="Зарплата"  FontSize="14" HorizontalOptions="Center" />
+
+                    <Entry x:Name="SalaryPeriod2" Keyboard="Numeric" />
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout Grid.Row="5" Orientation="Horizontal" HorizontalOptions="Center" Margin="0,10,0,0">
+                <StackLayout Padding="20">
+                    <Label Text="Дата приема на работу"  FontSize="14" HorizontalOptions="Center" />
+
+                    <DatePicker x:Name="DatePeriodStart3" Format="d" >
+                        <DatePicker.MinimumDate>1/1/1963</DatePicker.MinimumDate>
+                    </DatePicker>
+                </StackLayout>
+
+                <StackLayout Padding="20">
+                    <Label Text="Дата увольнения с работы"  FontSize="14" HorizontalOptions="Center" />
+
+                    <DatePicker x:Name="DatePeriodEnd3" Format="d" >
+                        <DatePicker.MinimumDate>1/1/1963</DatePicker.MinimumDate>
+                    </DatePicker>
+                </StackLayout>
+
+                <StackLayout Padding="20">
+                    <Label Text="Зарплата"  FontSize="14" HorizontalOptions="Center" />
+
+                    <Entry x:Name="SalaryPeriod3" Keyboard="Numeric" />
+                </StackLayout>
+            </StackLayout>
+
+
+            
+
+            <StackLayout Grid.Row="6" Orientation="Horizontal" HorizontalOptions="Center" Margin="0,10,0,0">
+
+                <StackLayout Padding="20">
+                    <Picker x:Name="SelectMilitary1" Title="Дополнительный период" >
+                        <Picker.Items>
+                            <x:String>Нет</x:String>
+                            <x:String>Время воинской службы (по призыву) и приравненной к ней деятельности</x:String>
+                            <x:String>Период воинской службы по контракту</x:String>
+                            <x:String>Период работы на Крайнем Севере, в районах, приравненных к нему, в зоне аварии на ЧАЭС</x:String>
+                            <x:String>Участие в боевых действиях и службы в зоне аварии на ЧАЭС, лечение военных травм</x:String>
+                            <x:String>Период получения пособия по обязательному социальному страхованию в период временной нетрудоспособности</x:String>
+                            <x:String>Период ухода за каждым ребенком до достижения им возраста полутора лет</x:String>
+                            <x:String>Период участия в оплачиваемых общественных работах</x:String>
+                            <x:String>Период переезда или переселения по направлению гос. службы занятости в другую местность для трудоустройства</x:String>
+                            <x:String>Период получения пособия по безработице</x:String>
+                            <x:String>Период содержания под стражей и отбывания наказания в местах лишения свободы и ссылке (необоснованно)</x:String>
+                            <x:String>Период ухода за инвалидом I группы, ребенком-инвалидом или за лицом, достигшим возраста 80 лет</x:String>
+                            <x:String>Период проживания супругов военнослужащих в местностях, где они не могут трудиться</x:String>
+                            <x:String>Период проживания за границей супругов работников, направленных в дипломатические представительства и консульские учреждения РФ</x:String>
+                            <x:String>Период сотрудничества по контракту с органами, осуществляющими оперативно-розыскную деятельность</x:String>
+                            <x:String>Период временного отстранены от должности (работы), необоснованно привлечнных к уголовной ответственности</x:String>
+                            <x:String>Период осуществления судейских полномочий</x:String>
+                            <x:String>Период пребывания в добровольческом формировании</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </StackLayout>
+
+                <StackLayout Padding="20">
+                    <Label Text="Лет"  FontSize="14" HorizontalOptions="Center" />
+
+                    <Entry x:Name="OldMilitary1" Keyboard="Numeric" />
+                </StackLayout>
+
+                <StackLayout Padding="20">
+                    <Label Text="Месяцев"  FontSize="14" HorizontalOptions="Center" />
+
+                    <Entry x:Name="MounMilitary1" Keyboard="Numeric" />
+                </StackLayout>
+
+                <StackLayout Padding="20">
+                    <Label Text="Дней"  FontSize="14" HorizontalOptions="Center" />
+
+                    <Entry x:Name="DayMilitary1" Keyboard="Numeric" />
+                </StackLayout>
+
+                <StackLayout Padding="20">
+                    <Label Text="Зарплата"  FontSize="14" HorizontalOptions="Center" />
+
+                    <Entry x:Name="SalaryMilitary1" Keyboard="Numeric" />
+                </StackLayout>
+            </StackLayout>
+
+            
+
+            <StackLayout Grid.Row="7" Orientation="Horizontal" HorizontalOptions="Center" Margin="0,10,0,0">
+
+
+                <StackLayout Padding="20">
+
+
+                    <Picker x:Name="Children" Title="Вы находились в отпуске по уходу за ребенком?" >
+                        <Picker.Items>
+                            <x:String>Нет</x:String>
+                            <x:String>Да, за 1 ребенком</x:String>
+                            <x:String>Да, за 2 детьми, в разное время</x:String>
+                            <x:String>Да, за 3 и более детьми, в разное время</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                </StackLayout>
+
+
+            </StackLayout>
+
+            <StackLayout Grid.Row="8" Orientation="Horizontal" HorizontalOptions="Center" Margin="0,10,0,0">
+                <Button x:Name="Pension"  Text="Рассчитать" SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnPensionClicked"
+                HorizontalOptions="Center" />
+            </StackLayout>
+
+
+            <StackLayout Grid.Row="9" Orientation="Horizontal" HorizontalOptions="Center" Margin="0,10,0,0">
+                <StackLayout Padding="20">
+                    <Label x:Name="ResultAge" Text="Ваш стаж:"  FontSize="14" HorizontalOptions="Center" />
+                </StackLayout>
+
+                <StackLayout Padding="20">
+                    <Label x:Name="ResultPension" Text="Ваша пенсия:"  FontSize="14" HorizontalOptions="Center" />
+                </StackLayout>
+            </StackLayout>
+
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
